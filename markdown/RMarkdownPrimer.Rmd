@@ -1,0 +1,141 @@
+---
+title: "Markdown Primer"
+author: "Jared P. Lander"
+output: 
+    html_document:
+        toc: yes
+        toc_float:
+            smooth_scroll: yes
+            collapsed: no
+        number_sections: yes
+    pdf_document:
+        toc: yes
+    word_document:
+        toc: yes
+---
+
+```{r settings}
+knitr::opts_chunk$set(cache=TRUE, fig.align='center', echo=TRUE)
+```
+
+
+# My First Section
+
+We started a new section with a a hashtag and this is the first paragraph in that section. Notice that the text will automatically wrap to the next line in the editor, but it still has the same line number. All text on a single line is considered one paragraph.
+
+Leaving a blank line starts a new paragraph. Remember, markdown is highly space and case sensitive.
+If you don't leave a blank line, this sentence is still part of the same paragraph.
+
+# New Section
+
+You start a new section by leaving a blank line and starting the next line with a hashtag. No need to close the previous section, simply start a new one.
+
+# Subsections
+
+Creating subsections is just as easy, aimply use two hashtags.
+
+## First Subsection
+
+We started as subsection within a section bu using two hashtags. No need to do anything to the section itself.
+
+## Another Subsection
+
+Just like with sections, to start a new subsection simply start a line with two hashtags. Again, no need to close the previous subsection.
+
+# Back to Sections
+
+We return to a level 1 section by starting a new one with a single hashtag. Again, no need to close the previous sections or subsections.
+
+# Formatting Text
+
+_Emphasized Text Goes Here_
+
+__Strong Text__
+
+___Emphasized and strong text___
+
+`anything in backticks looks like computer code`
+
+# Lists
+
+## Unordered Lists
+
+- Apple
+- Banana
+- Orange
+- Mango
+- Durian
+- Kiwi
+- Watermelon
+
+## Ordered Lists
+
+1. New York
+    a. Coal
+    a. Wood
+    a. Gas
+1. New Jersey
+    a. Gas
+    a. Wood
+1. Philadelphia
+1. Detroit
+1. Rome
+1. Naples
+
+i. Mushrooms
+i. Garlic
+i. Peppers
+
+# Links
+
+[My website](https://www.jaredlander.com)
+
+# R Time!!!!!!!
+
+```{r}
+1 + 1
+```
+
+```{r}
+# this is a comment inside of R
+x <- 3
+x
+```
+
+```{r}
+x*2
+```
+
+Let's give our chunks names.
+
+```{r simple-code-ex}
+x*3 + 7
+```
+
+Let's show the results of a chunk without showing the code.
+
+```{r another-example,echo=FALSE}
+5*x + 4
+```
+
+# Plots
+
+Let's all make a plot today
+
+```{r load-ggplot2}
+library(ggplot2)
+```
+
+```{r plot-diamonds,fig.align='center',fig.cap='A scatterplot of diamond price vs size, color coded according to diamond cut.',cache=TRUE}
+ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point()
+```
+
+# Math
+
+$$
+    \bar{x} = \sum_{i=1}^n \frac{1}{n} x_i
+$$
+
+The number $\pi$ is defined as 3.14159....
+
+A more complicated expression is $\hat{\beta}=(X^TX)^{-1}X^TY$ for regression

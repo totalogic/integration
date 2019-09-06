@@ -1,0 +1,37 @@
+---
+title: "R Markdown Primer"
+author: "Erico Cardelli Author"
+output: html_document
+---
+# My First Section
+
+We start a new section with a single HASHTAG and this is the first paragraph in that section.  Notice how the text wraps around to the next line in the editor but it still has the same line number and that's pretty cool.  That's because all text on a single line is considered a paragraph.
+
+Leaving a blank line starts a new paragraph.  Remember Markdown is highly spaced and cased aware.
+If you don't leave a blank line you are still in the same paragraph
+
+So it is very important to pay attention to spaces.
+
+F7 for spellcheck.
+
+# New Section
+
+You start a new section by leaving a blank line and then starting the next line with a hashtag.  No need to close the previous section, just start a new one. (Similar to LaTex)
+
+# Subsections
+
+Creating a subsection is easy.  Two Hashtags
+
+## This is a Subsection
+
+We start a section in a section to start it
+
+You can use add decorator module
+
+## Another Subsection
+
+Same rules apply no need to close previous subsection just keep a blank line in between them
+
+the output type is actually an R function you are specifying and is in the R Markdown Package
+
+# Back to Sections
