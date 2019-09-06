@@ -51,3 +51,34 @@ And you can combine them with Three Underlines ___Bold and Strong___
 And finally code snippets are the BACKTIC under the Esc
 
 `This is computer Code`
+
+# Lists
+
+## Unordered List
+
+Fruit
+
+- Apple
+- Orange
+- Banana
+- Mango
+- Durian
+- Watermellon
+- Dragonfruit
+
+## Ordered List
+
+To createa an ordered list use 1. at the beginning of your list items
+Hit Dice
+
+1. Bug
+    a. gnat
+    a. fly
+    a. spider
+    a. wasp
+1. Fool
+1. Knight
+1. Troll
+1. Dragon
+
+### Sublists
