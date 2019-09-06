@@ -70,6 +70,11 @@ Fruit
 
 To createa an ordered list use 1. at the beginning of your list items
 Hit Dice
+and a sublist with a. to make the sublist
+
+### Sublists
+
+I added subs in there too
 
 1. Bug
     a. gnat
@@ -77,8 +82,14 @@ Hit Dice
     a. spider
     a. wasp
 1. Fool
+    i. dope
+    i. idiot
 1. Knight
 1. Troll
 1. Dragon
 
-### Sublists
+# Links
+
+You put the text you want displayed in square brackets and then the url into parenthesis
+
+`[Google](https://www.google.com)` = [Google](https://www.google.com)
