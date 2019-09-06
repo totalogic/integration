@@ -93,3 +93,20 @@ I added subs in there too
 You put the text you want displayed in square brackets and then the url into parenthesis
 
 `[Google](https://www.google.com)` = [Google](https://www.google.com)
+
+# R Time!!!!
+
+_Alt+Ctrl+I for new code chunk_
+
+
+```{r}
+1+1
+```
+
+R Markdown showed you the code, executed cleanly, and displays results
+
+```{r}
+x<-3
+x
+```
+
