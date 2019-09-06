@@ -38,5 +38,16 @@ the output type is actually an R function you are specifying and is in the R Mar
 
 # Formatting Text
 
+One Underline is for _Emphasized_ 
+
 _Emphasized Words Go Here_
 
+Strong Text is with two underlines __Strong__
+
+__Strong Text Goes Here__
+
+And you can combine them with Three Underlines ___Bold and Strong___
+
+And finally code snippets are the BACKTIC under the Esc
+
+`This is computer Code`
