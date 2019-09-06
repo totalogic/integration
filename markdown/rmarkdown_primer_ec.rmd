@@ -12,15 +12,15 @@ If you don't leave a blank line you are still in the same paragraph
 
 So it is very important to pay attention to spaces.
 
-F7 for spellcheck.
+F7 for spell check.
 
 # New Section
 
-You start a new section by leaving a blank line and then starting the next line with a hashtag.  No need to close the previous section, just start a new one. (Similar to LaTex)
+You start a new section by leaving a blank line and then starting the next line with a hash tag.  No need to close the previous section, just start a new one. (Similar to La-Tex)
 
 # Subsections
 
-Creating a subsection is easy.  Two Hashtags
+Creating a subsection is easy.  Two Hash tags
 
 ## This is a Subsection
 
@@ -35,3 +35,8 @@ Same rules apply no need to close previous subsection just keep a blank line in 
 the output type is actually an R function you are specifying and is in the R Markdown Package
 
 # Back to Sections
+
+# Formatting Text
+
+_Emphasized Words Go Here_
+
