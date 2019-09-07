@@ -1,8 +1,42 @@
 ---
+# Comments work up here as well
+# Metadata Section in YAML
+# very space and placement rigid
 title: "R Markdown Primer"
 author: "Erico Cardelli Author"
-output: html_document
+# Lets make a larger directive for output: we need to go to the next line and tab indent
+output: 
+    html_document:
+        #Table of Contents
+        toc: yes
 ---
+
+# References
+
+## R markdown link to topic notebook
+
+
+[Class OneNote](https://onedrive.live.com/edit.aspx/Documents/Combined%20Notes?cid=7e1da892b45794cd&id=documents&wd=target%28Technical%2FTraining.one%7CE6348C5D-083C-4A40-8324-D42F0B525693%2FR%20Markdown%20Primer%7C6ED37784-C83D-4E14-B84B-54A6BCD399EC%2F%29
+onenote:https://d.docs.live.net/7e1da892b45794cd/Documents/Combined%20Notes/Technical/Training.one#R%20Markdown%20Primer&section-id={E6348C5D-083C-4A40-8324-D42F0B525693}&page-id={6ED37784-C83D-4E14-B84B-54A6BCD399EC}&end)
+
+
+### Be Contextually aware
+
+After your metadata section do a "metasetr" which will feed new metadata into new global settings
+
+```{r}
+# Now a snippet to set things right
+# its funny that outside of this block a comment is a giant Title
+
+# This and by using autotab, I was able to piece out
+# knitr::options for chunks then
+# RMarkdown is rendering
+# knitr is evaluating
+# and the $ is for functions in the knitr opts_chunk function SET (whatever,otherstuff,etc)
+knitr::opts_chunk$set(cache=TRUE, fig.align = 'center', echo = TRUE)
+```
+
+
 # My First Section
 
 We start a new section with a single HASHTAG and this is the first paragraph in that section.  Notice how the text wraps around to the next line in the editor but it still has the same line number and that's pretty cool.  That's because all text on a single line is considered a paragraph.
@@ -93,6 +127,10 @@ I added subs in there too
 You put the text you want displayed in square brackets and then the url into parenthesis
 
 `[Google](https://www.google.com)` = [Google](https://www.google.com)
+
+[Class OneNote](https://onedrive.live.com/edit.aspx/Documents/Combined%20Notes?cid=7e1da892b45794cd&id=documents&wd=target%28Technical%2FTraining.one%7CE6348C5D-083C-4A40-8324-D42F0B525693%2FR%20Markdown%20Primer%7C6ED37784-C83D-4E14-B84B-54A6BCD399EC%2F%29
+onenote:https://d.docs.live.net/7e1da892b45794cd/Documents/Combined%20Notes/Technical/Training.one#R%20Markdown%20Primer&section-id={E6348C5D-083C-4A40-8324-D42F0B525693}&page-id={6ED37784-C83D-4E14-B84B-54A6BCD399EC}&end)
+
 
 # R Time!!!!
 
