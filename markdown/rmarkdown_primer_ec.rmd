@@ -106,7 +106,85 @@ _Alt+Ctrl+I for new code chunk_
 R Markdown showed you the code, executed cleanly, and displays results
 
 ```{r}
+# this is a comment inside of R code
+# here I will set a variable that is only inside this code bubbles
 x<-3
 x
 ```
+
+# Text in between code?  Such Heresy
+
+```{r THISISHOWTONAMEACODEBLOCK}
+x*2
+```
+
+Chunks are cumulative and serial but not in any way related to the console or any other `ENVIRONMENT`
+
+# Naming Chunks?
+
+So in the code chunk right after the r that defines it as `R Code` put a space and then a name followed by the other curlybrace
+See the Example here
+
+```{r C0d3_N@me-3x@mp73}
+x*7+3
+```
+
+Lets show the results of a code chunk without showing the code
+
+```{r another-example,echo=FALSE}
+5*x+4
+```
+
+by doing echo=false the code is safely hidden but results flow
+
+look to the left and you can see carrots that let you fold the stuffs
+
+## Better Examples
+
+Alt+Shift+K will show you keyboard Shortcuts
+
+# Plots
+
+Plots all make sense of data
+but first we have to prepare for the plots
+And loading more prerequisites
+
+
+```{r load ggplot2}
+library(ggplot2)
+```
+
+Put the library code alone to enable smart reuse
+
+```{r}
+ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point()
+```
+
+_What is amaziing about this is that the picture is embeded as a graphic but its encoded so anyone can see it and all the images are embedded_
+
+# Including Javascript
+
+The web page actually embeds everything for your use
+
+# Plot Improvements
+
+I want to center the plot...
+
+```{r Align-my-diamonds-plot,fig.align='center'}
+ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point()
+```
+
+The alignment directive in that code was easy to figure out with the comma intellisyntax
+
+## A Caption
+
+```{r plot-diamond-with-caption,fig.align='center',fig.cap='A scatterplot of diamond price vs. size, color coded according to diamond cut',cache=TRUE}
+
+ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point()
+
+
+```
+
+Lots to unpack in this code...
+but where it sayd cache=TRUE, that means that if this code snippet hasn't changed use it as is. possibly saving a lot of time
 
