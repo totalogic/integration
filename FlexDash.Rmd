@@ -1,0 +1,53 @@
+---
+title: Flex Example
+output:
+        flexdashboard::flex_dashboard:
+            orientation: columns
+            # free Buttons YAY
+            social: ["twitter", "facebook"]
+            # this gives you social buttons
+            # To Give away the goods (you get a link to download the source)
+            source_code: embed
+---
+# Add some setup
+
+```{r setup,include=FALSE}
+knitr::opts_chunk$set(echo=FALSE, cache=TRUE, message=FALSE, fig.align = 'center')
+
+```
+
+```{r load-packages}
+library(ggplot2)
+library(DT)
+```
+
+
+
+# Page One
+
+## Left Column
+
+### Top Left
+
+```{r diamond-hist}
+ggplot(diamonds, aes(x=price)) + geom_histogram()
+```
+
+### Bottom Left
+
+Hello World
+
+## Right Column
+
+### Right Side
+
+```{r diamond-nice}
+datatable(head(diamonds, n=1000), rownames=FALSE)
+```
+
+
+# Page two
+
+### Side two
+
+Your add HEre
