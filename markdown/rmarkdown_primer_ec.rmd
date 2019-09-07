@@ -6,9 +6,13 @@ title: "R Markdown Primer"
 author: "Erico Cardelli Author"
 # Lets make a larger directive for output: we need to go to the next line and tab indent
 output: 
+    # The first Output file is the one it creates, should see if case can be used
+    
     # Render to PDF
     pdf_document:
         toc: yes
+    
+    # Render to HTML
     html_document:
         #Table of Contents
         toc: yes
@@ -19,6 +23,11 @@ output:
             collapsed: no
         # this is a fuunction of html_document
         number_sections: yes
+        
+        # Render to Word
+    word_document:
+        toc: yes
+    
 ---
 
 # References
@@ -236,3 +245,28 @@ ggplot(diamonds, aes(x=carat, y=price, color=cut)) + geom_point()
 Lots to unpack in this code...
 but where it sayd cache=TRUE, that means that if this code snippet hasn't changed use it as is. possibly saving a lot of time
 
+
+# MATH and R MARKDOWN!!!
+
+To put in an equation you have to start and stop with 
+
+`$$`
+
+
+
+$$
+    \bar{X} = \sum_{i=1}^n \frac{1}{n} x_1
+$$
+
+Another option with R Markdown is the inline method but its only one `$`
+
+The number $\pi$ is defined as 3.14159...
+
+
+A more complicated expression is $\hat{\beta}=(X^TX)^{-1}X^TY$ for regression
+
+# Math is fun!!!
+
+# Tools
+
+RStudio Connect will house various types of apps and whatnot, shiny or other
