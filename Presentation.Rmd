@@ -1,0 +1,34 @@
+---
+# Comments work up here as well
+# Metadata Section in YAML
+# very space and placement rigid
+title: Awesome Slideshow
+author: "Erico Cardelli Author"
+# Lets make a larger directive for output: we need to go to the next line and tab indent
+output: 
+    ioslides_presentation:
+        widescreen: yes
+    
+---
+
+## My First Slide
+
+Some text to go on a slide, even though you should use few words and mostly images when giving a talk
+
+<div class='notes'>
+There should only be so much text
+</div>
+
+## My Second Slide
+
+Wooo! Just because
+
+## My data Slide
+
+
+```{r setupthesetuping,fig.align='center',message=FALSE}
+# message=false hides alert messages
+library(ggplot2)
+ggplot(diamonds, aes(x=price)) + geom_histogram()
+```
+
