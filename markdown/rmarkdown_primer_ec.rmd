@@ -6,9 +6,19 @@ title: "R Markdown Primer"
 author: "Erico Cardelli Author"
 # Lets make a larger directive for output: we need to go to the next line and tab indent
 output: 
+    # Render to PDF
+    pdf_document:
+        toc: yes
     html_document:
         #Table of Contents
         toc: yes
+        # More bling for the TOC
+        toc_float:
+            # TOC is highlighted where I am
+            smooth_scrolling: yes
+            collapsed: no
+        # this is a fuunction of html_document
+        number_sections: yes
 ---
 
 # References
